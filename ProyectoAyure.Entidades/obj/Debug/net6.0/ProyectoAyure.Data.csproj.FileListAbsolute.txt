@@ -1,0 +1,14 @@
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\bin\Debug\net6.0\ProyectoAyure.Data.deps.json
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\bin\Debug\net6.0\ProyectoAyure.Data.runtimeconfig.json
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\bin\Debug\net6.0\ProyectoAyure.Data.dll
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\bin\Debug\net6.0\ref\ProyectoAyure.Data.dll
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\bin\Debug\net6.0\ProyectoAyure.Data.pdb
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\obj\Debug\net6.0\ProyectoAyure.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\obj\Debug\net6.0\ProyectoAyure.Data.AssemblyInfoInputs.cache
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\obj\Debug\net6.0\ProyectoAyure.Data.AssemblyInfo.cs
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\obj\Debug\net6.0\ProyectoAyure.Data.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\obj\Debug\net6.0\ProyectoAyure.Data.dll
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\obj\Debug\net6.0\ref\ProyectoAyure.Data.dll
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\obj\Debug\net6.0\ProyectoAyure.Data.pdb
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\obj\Debug\net6.0\ProyectoAyure.Data.genruntimeconfig.cache
+D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Entidades\obj\Debug\net6.0\ProyectoAyure.Data.csproj.AssemblyReference.cache

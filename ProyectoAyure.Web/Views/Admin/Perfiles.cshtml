@@ -1,0 +1,77 @@
+﻿@using ProyectoAyure.Data.ViewModels
+
+@model List<PerfilViewModel>
+
+@{
+    ViewData["Title"] = "Perfiles";
+    Layout = "~/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "Ayure - Perfiles";
+}
+
+<script src="~/js/jquery-3.6.0.min.js"></script>
+<script src="~/js/jquery-ui.js"></script>
+<script type="text/javascript" src="@Url.Content("../js/bootstrap-table.js?version=")@DateTime.Now.ToString("ddMMyyyyhhmmss")"></script>
+<script type="text/javascript" src="@Url.Content("../js/bootstrap-table-es-Es.js")"></script>
+<link rel="stylesheet" type="text/css" href="@Url.Content("../css/bootstrap-table.css?version=")@DateTime.Now.ToString("ddMMyyyyhhmmss")">
+
+<div class="container" style="width:90%;">
+    <div class="row">
+        <h4 style="padding:10px 250px;">@ViewData["Title"]</h4>
+        <hr style="width:85%; margin-left:230px;"/>
+    </div>
+    <div class="row" style="margin-left:210px;"> 
+        <form method="post" id="frmPerfiles">
+            <div class="row" style="align-content:center; padding-top:1em;">
+                <label style="width:35px;">Id:</label>
+                @Html.TextBox("TxtIdPerfil", null, new { @id = "TxtIdPerfil", @class = "form-control", @placeholder = "", @style="float: left; width: 50px; margin-top:-5px;", @disabled="disabled" ,@autocomplete = "off", @maxlength = "70"})
+                <label style="float: left; width:75px;">Perfil:</label>
+                @Html.TextBox("TxtPerfil", null, new { @id = "TxtPerfil", @class = "form-control", @placeholder = "", @style="float: left; width: 300px; margin-top:-5px;" ,@autocomplete = "off", @maxlength = "70", @data_validation = "required", @data_validation_error_msg_required = "" })
+                <label class="" style="float: left; width:60px; margin-left:10px;"> Activo </label>
+                <input type="checkbox" id="chkActivo" name="chkActivo" style="background:black; color:rgb(188,168,73); width:25px; float: left; margin-top:7px;">               
+            </div>
+            <div class="row" style="align-content:center; margin-left:25px; padding-top:1em;">
+                <button id="btnGuardarPerfil" type="submit" class="btn btn-primary" style="width:125px;">Registrar</button>
+                <button id="btnCancelarPerfil" type="button" class="btn btn-danger" style="float:left; width:125px; margin-left:25px;">Cancelar</button>
+            </div>
+        </form>
+        <div class="row" style="height:25px;">&nbsp;</div>
+        <table class="table table-striped table-hover" style="overflow:inherit !important" data-pagination="true" id="tbPerfiles">
+            <thead>
+                <tr style="background:#9B9A9A;">
+                    <th data-field="Id" data-valign="middle" hidden="hidden" style="width:450px; visibility:hidden;">Id</th>
+                    <th data-field="NombrePerfil" data-valign="middle" style="width:350px;">Perfil</th>
+                    <th data-field="Activo" data-valign="middle" style="width:100px; text-align:center;">Activo</th>
+                    <th data-field="Acciones" data-valign="middle" style="width:100px; text-align:center;">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style="text-align:center;">
+                            <label>@item.Id</label>
+                        </td>
+                        <td>
+                            <label style="width:350px;">@item.NombrePerfil</label>
+                        </td>
+                        <td>
+                            @if(@item.Activo == true){
+                                <input type="checkbox" id="chkPerfilActivo" disabled="disabled" name="chkPerfilActivo" checked="checked" />
+                            }
+                            else
+                            {
+                                <input type="checkbox" id="chkPerfilActivo" disabled="disabled" name="chkPerfilActivo" />
+                            }
+                        </td>
+                        <td>
+                            <button id="btnEditarPerfil" class="btn btn-primary" style="width:75px; margin-left:25px;">Editar</button>
+                            <button id="btnEliminarPerfil" class="btn btn-danger" style="width:100px;">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="@Url.Content("../js/Admin/Perfil.js?=")@DateTime.Now.ToString(" ddMMyyHHmmss")"></script>

@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a4a71ae9-c555-4ead-ac01-918b56e612a3": {
+      "ProjectGuid": "a4a71ae9-c555-4ead-ac01-918b56e612a3",
+      "DisplayName": "ProyectoAyure.Web",
+      "ColorIndex": 0
+    },
+    "e7dcdf76-3c6a-4db9-9273-dde551e7a0de": {
+      "ProjectGuid": "e7dcdf76-3c6a-4db9-9273-dde551e7a0de",
+      "DisplayName": "ProyectoAyure.Data",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "fbaeb46f-2fa6-4b27-8c0e-d70460748e6a": {
+      "ProjectGuid": "fbaeb46f-2fa6-4b27-8c0e-d70460748e6a",
+      "DisplayName": "ProyectoAyure.Servicios",
+      "ColorIndex": 2
+    },
+    "27a9eaca-69af-406e-9442-893587394232": {
+      "ProjectGuid": "27a9eaca-69af-406e-9442-893587394232",
+      "DisplayName": "ProyectoAyure.Repositorios",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
