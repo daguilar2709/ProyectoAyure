@@ -21,6 +21,7 @@ namespace ProyectoAyure.Data.ViewModels
         public string FechaModificacion { get; set; }
         public bool Activo { get; set; }
         public int perfilId { get; set; }
+        public string nombrePerfil { get; set; }
         public int usuarioAccesoId { get; set; }
     }
 }

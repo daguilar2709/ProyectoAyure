@@ -54,9 +54,9 @@ namespace ProyectoAyure.Servicios.Servicios
                 List<Usuarios> lstUsuario = _iUsuarioRepositorio.ObtieneUsuarios();
                 foreach (var usuario in lstUsuario)
                 {
-                    lstusuarioVM.Add(new UsuarioViewModel() { 
-                        Id = usuario.Id, 
-                        Nombre = usuario.Nombre, 
+                    lstusuarioVM.Add(new UsuarioViewModel() {
+                        Id = usuario.Id,
+                        Nombre = usuario.Nombre,
                         ApellidoPaterno = usuario.ApellidoPaterno,
                         ApellidoMaterno = usuario.ApellidoMaterno,
                         Direccion = usuario.Direccion,
@@ -65,7 +65,9 @@ namespace ProyectoAyure.Servicios.Servicios
                         Telefono2 = usuario.Telefono2 == null ? "" : usuario.Telefono2,
                         FechaCreacion = usuario.FechaCreacion,
                         FechaModificacion = usuario.FechaModificacion,
-                        Activo = usuario.Activo 
+                        perfilId = usuario.perfiles == null ? 0 : usuario.perfiles.Id,
+                        nombrePerfil = usuario.perfiles == null ? "" : usuario.perfiles.NombrePerfil,
+                        Activo = usuario.Activo
                     });
                 }
 
@@ -132,6 +134,55 @@ namespace ProyectoAyure.Servicios.Servicios
             usuarioAcceso = _iUsuarioRepositorio.RegistraAcceso(usuarioAcceso);
 
             return usuarioAcceso;
+        }
+
+        public bool EditaUsuario (UsuarioViewModel usuarioVM)
+        {
+            try
+            {
+                Usuarios usuario = new Usuarios();
+                usuario.Id = usuarioVM.Id;
+                usuario.Nombre = usuarioVM.Nombre;
+                usuario.ApellidoPaterno = usuarioVM.ApellidoPaterno;
+                usuario.ApellidoMaterno = usuarioVM.ApellidoMaterno;
+                usuario.Direccion = usuarioVM.Direccion;
+                usuario.perfilId = usuarioVM.perfilId;
+                usuario.CodigoPostal = usuarioVM.CodigoPostal;
+                usuario.Telefono1 = usuarioVM.Telefono1;
+                usuario.Telefono2 = usuarioVM.Telefono2;
+                usuario.FechaCreacion = usuarioVM.FechaCreacion;
+                usuario.FechaModificacion = usuarioVM.FechaModificacion;
+                usuario.Activo = usuarioVM.Activo;
+
+                var usuarioActualizado = _iUsuarioRepositorio.ActualizaUsuario(usuario);
+
+                if (usuarioActualizado != null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public bool EliminaUsuario(int idUsuario)
+        {
+            try
+            {
+                _iUsuarioRepositorio.EliminaUsuario(idUsuario);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }

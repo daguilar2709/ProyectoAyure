@@ -26,6 +26,8 @@
     <div class="row" >
         <form method="post" id="frmUsuario">
             <div class="row" style="align-content:end;">
+                <label style="width:35px;">Id:</label>
+                @Html.TextBox("TxtIdUsuario", null, new { @id = "TxtIdUsuario", @class = "form-control", @placeholder = "", @style="float: left; width: 50px; margin-top:-5px;", @disabled="disabled" ,@autocomplete = "off", @maxlength = "70"})
                 <label style="width:75px;">Nombre:</label>
                 @Html.TextBox("txtNombre", null, new { @id = "txtNombre", @class = "form-control", @placeholder = "", @style="float: left; width: 350px; margin: -5px 0px 0px 10px;" ,@autocomplete = "off", @maxlength = "100", @data_validation = "required", @data_validation_error_msg_required = "" })
             </div>
@@ -65,6 +67,7 @@
                     <th data-field="Id" data-valign="middle" style="width:50px;font-size:12px;">Id</th>
                     <th data-field="Nombre" data-valign="middle" style="width:150px;font-size:12px;">Nombre</th>
                     <th data-field="Direccion" data-valign="middle" style="width:150px;font-size:12px;">Direccion</th>
+                    <th data-field="nombrePerfil" data-valign="middle" style="width:100px;font-size:12px;">Perfil</th>
                     <th data-field="CodigoPostal" data-valign="middle" style="width:100px;font-size:12px;">Codigo Postal</th>
                     <th data-field="Telefono1" data-valign="middle" style="width:75px;font-size:12px;">Telefono</th>
                     <th data-field="Telefono2" data-valign="middle" style="width:120px;font-size:12px;">Telefono Opcional</th>
@@ -77,15 +80,19 @@
             <tbody>
                 @foreach (var item in Model)
                 {
-                    <tr>
+                var NombreCompleto = @item.Nombre.Trim() + ' ' + @item.ApellidoPaterno.Trim() + ' ' + @item.ApellidoMaterno.Trim();
+                <tr>
                         <td style="text-align:center;">
                             <label>@item.Id</label>
                         </td>
                         <td>
-                            <label style="width:200px;font-size:12px;">@item.Nombre @item.ApellidoPaterno @item.ApellidoMaterno</label>
+                            <label style="width:200px;font-size:12px;">@NombreCompleto</label>
                         </td>
                         <td>
                             <label style="width:150px;font-size:12px;">@item.Direccion</label>
+                        </td>
+                        <td>
+                            <label style="width:100px;font-size:12px;">@item.nombrePerfil</label>
                         </td>
                         <td>
                             <label style="width:100px;font-size:12px;">@item.CodigoPostal</label>

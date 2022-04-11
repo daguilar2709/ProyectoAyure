@@ -33,6 +33,21 @@ namespace ProyectoAyure.Repositorios.Repositorio
             }
         }
 
+        public Perfiles ObtienePerfil(int idPerfil)
+        {
+            Perfiles perfil = new Perfiles();
+
+            try
+            {
+                perfil = _dbContext.Perfiles.Where(i => i.Id == idPerfil).First();
+                return perfil;
+            }
+            catch (Exception ex)
+            {
+                return perfil;
+            }
+        }
+
         public bool RegistraPerfil(Perfiles perfil)
         {
             try
@@ -84,5 +99,6 @@ namespace ProyectoAyure.Repositorios.Repositorio
                 return false;
             }
         }
+
     }
 }

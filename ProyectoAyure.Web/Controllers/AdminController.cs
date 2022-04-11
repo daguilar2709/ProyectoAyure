@@ -64,6 +64,42 @@ namespace ProyectoAyure.Web.Controllers
             return Ok(Json(lstPerfilesVM));
         }
 
+        [HttpPost("/Admin/EditaUsuario/")]
+        public IActionResult EditaUsuario(UsuarioViewModel usuarioVM)
+        {
+            try
+            {
+                var usuarioActualizado = _usuarioServicio.EditaUsuario(usuarioVM);
+                if (usuarioActualizado)
+                {
+                    return Ok(Json(true));
+                }
+                else
+                {
+                    return Ok(Json(false));
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [HttpDelete("/Admin/EliminaUsuario/")]
+        public IActionResult EliminaUsuario(int idUsuario)
+        {
+            try
+            {
+                _usuarioServicio.EliminaUsuario(idUsuario);
+                return Ok(Json(true));
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
         #endregion 
 
         #region Acciones Vista Perfill

@@ -12,5 +12,7 @@ namespace ProyectoAyure.Servicios.IServicios
         UsuarioViewModel ObtieneUsuario(int idUsuario);
         List<UsuarioViewModel> ObtieneUsuarios();
         bool RegistraUsuario(UsuarioViewModel usuarioVM);
+        bool EditaUsuario(UsuarioViewModel usuarioVM);
+        bool EliminaUsuario(int idUsuario);
     }
 }

@@ -13,3 +13,18 @@ D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debu
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ref\ProyectoAyure.Repositorios.dll
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.pdb
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Debug\net6.0\ProyectoAyure.Repositorios.deps.json
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Debug\net6.0\ProyectoAyure.Repositorios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Debug\net6.0\ref\ProyectoAyure.Repositorios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Debug\net6.0\ProyectoAyure.Repositorios.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Debug\net6.0\ProyectoAyure.Data.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Debug\net6.0\ProyectoAyure.Data.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.AssemblyInfo.cs
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.csproj.CopyComplete
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ref\ProyectoAyure.Repositorios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Debug\net6.0\ProyectoAyure.Repositorios.pdb

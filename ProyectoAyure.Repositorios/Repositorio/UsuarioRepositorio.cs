@@ -22,11 +22,18 @@ namespace ProyectoAyure.Repositorios.Repositorio
 
         public List<Usuarios> ObtieneUsuarios()
         {
+            List<Usuarios> lstUsers = new List<Usuarios>();
             List<Usuarios> lstUsuarios = new List<Usuarios>();
 
             try
             {
-                lstUsuarios = _dbContext.Usuarios.ToList();
+                lstUsers = _dbContext.Usuarios.ToList();
+                foreach (var user in lstUsers)
+                {
+                    user.perfiles = new Perfiles();
+                    user.perfiles = _dbContext.Perfiles.Where(p => p.Id == user.perfilId).First();
+                    lstUsuarios.Add(user);
+                }
                 return lstUsuarios;
             }
             catch (Exception ex)
@@ -41,7 +48,9 @@ namespace ProyectoAyure.Repositorios.Repositorio
 
             try
             {
-                usuarios = _dbContext.Usuarios.Where(u => u.Id == idUsuario).First();
+                usuarios = _dbContext.Usuarios.AsNoTracking().Where(u => u.Id == idUsuario).First();
+                usuarios.perfiles = new Perfiles();
+                usuarios.perfiles = _dbContext.Perfiles.Where(p => p.Id == usuarios.perfilId).First();
                 return usuarios;
             }
             catch (Exception ex)
@@ -72,6 +81,9 @@ namespace ProyectoAyure.Repositorios.Repositorio
         {
             try
             {
+                var dataUsuario = ObtieneUsuario(usuario.Id);
+                usuario.FechaCreacion = dataUsuario.FechaCreacion;
+                usuario.FechaModificacion = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
                 _dbContext.Usuarios.Update(usuario);
                 _dbContext.SaveChanges();
 
@@ -101,6 +113,21 @@ namespace ProyectoAyure.Repositorios.Repositorio
             {
                 UsuarioAcceso usuarioAccesoR = new UsuarioAcceso();
                 return usuarioAccesoR;
+            }
+        }
+
+        public bool EliminaUsuario(int idUsuario)
+        {
+            try
+            {
+                Usuarios usuario = _dbContext.Usuarios.Where(u => u.Id == idUsuario).First();
+                _dbContext.Usuarios.Remove(usuario);
+                _dbContext.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
     }

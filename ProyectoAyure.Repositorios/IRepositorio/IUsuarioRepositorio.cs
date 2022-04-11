@@ -14,5 +14,6 @@ namespace ProyectoAyure.Repositorios.IRepositorio
         Usuarios RegistraUsuario(Usuarios usuario, int PerfilId);
         Usuarios ActualizaUsuario(Usuarios usuario);
         UsuarioAcceso RegistraAcceso(UsuarioAcceso usuarioAcceso);
+        bool EliminaUsuario(int idUsuario);
     }
 }

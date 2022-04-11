@@ -5,6 +5,7 @@ var inicializador = {
 
         //campos Formulario Usuarios
         frmUsuarios: $('#frmUsuario'),
+        txtIdUsuario: $('#TxtIdUsuario'),
         txtNombre: $('#txtNombre'),
         txtApellidoPat: $('#txtApellidoPat'),
         txtApellidoMat: $('#txtApellidoMat'),
@@ -61,44 +62,104 @@ var inicializador = {
 
         ////Evento btnEditar Tablar Usuario
         inicializador.controles.tbUsuarios.on('click', '#btnEditarUsuario', function () {
-            debugger;
             var $tr = $(this).closest('tr');
             var IdUsuario = $tr[0].cells[0].childNodes[1].textContent;
-            $.ajax({
-                type: 'POST',
-                async: false,
-                url: "/Admin/ObtieneUsuario", // we are calling json method
-                //dataType: 'json',
-                data: { idUsuario: IdUsuario },
-                success: function (result) {
-                    inicializador.controles.Nombre.val(nombrePerfil);
-                    inicializador.controles.ApellidoPaterno.val();
-                    inicializador.controles.ApellidoMaterno.val();
-                    inicializador.controles.Direccion.val();
-                    inicializador.controles.CodigoPostal.val();
-                    inicializador.controles.Telefono1.val();
-                    inicializador.controles.Telefono2.val();
-                },
-                error: function (ex) {
+            var NombreCompleto = $tr[0].cells[1].childNodes[1].textContent;
+            var Direccion = $tr[0].cells[2].childNodes[1].textContent;
+            var Perfil = $tr[0].cells[3].childNodes[1].textContent;
+            var CodigoPostal = $tr[0].cells[4].childNodes[1].textContent;
+            var Telefono = $tr[0].cells[5].childNodes[1].textContent;
+            var TelefonoOpcional = $tr[0].cells[6].childNodes[1].textContent;
 
+            var nombres = NombreCompleto.split(' ');
+            var Nombre = '', ApellidoPat = '', ApellidoMat = '';
+
+            for (var i = 0; i < nombres.length; i++) {
+                if (nombres.length == 3) {
+                    if (nombres[i] != '') {
+                        if (i == 0) {
+                            Nombre += nombres[i];
+                        }
+                        else if (i == 1) {
+                            ApellidoPat += nombres[i];
+                        } else
+                        {
+                            ApellidoMat += nombres[i];
+                        }
+                    }
                 }
-            });
+                else if (nombres.length == 4)
+                {
+                    if (nombres[i] != '') {
+                        if (i == 0 || i == 1) {
+                            Nombre += nombres[i];
+                        }
+                        else if (i == 2)
+                        {
+                            ApellidoPat += nombres[i];
+                        }
+                        else
+                        {
+                            ApellidoMat += nombres[i];
+                        }
+                    }
+                }
+            }
 
-            
+            var perfiles = $('#lstPerfiles')[0], index = "";
+
+            for (var j = 0; j < perfiles.length; j++) {
+                if (Perfil == perfiles[j].innerHTML) {
+                    index = perfiles[j].index
+                }
+            }
+
+            debugger;
+            inicializador.controles.txtIdUsuario.val(IdUsuario);
+            inicializador.controles.txtNombre.val(Nombre);
+            inicializador.controles.txtApellidoPat.val(ApellidoPat);
+            inicializador.controles.txtApellidoMat.val(ApellidoMat);
+            inicializador.controles.txtDireccion.val(Direccion);
+
+            inicializador.controles.ddlPerfiles.niceSelect('destroy');
+            $('#lstPerfiles option')[index].selected = true;
+            inicializador.controles.ddlPerfiles.niceSelect();
+
+            inicializador.controles.txtCodigoPostal.val(CodigoPostal);
+            inicializador.controles.TxtTelefono.val(Telefono);
+            inicializador.controles.TxtTelefonoOpcional.val(TelefonoOpcional);
         });
 
-        
+        ////Evento btnEliminar Tablar Usuario
+        inicializador.controles.tbUsuarios.on('click', '#btnEliminarUsuario', function () {
+            var $tr = $(this).closest('tr');
+            var IdUsuario = parseInt($tr[0].cells[0].childNodes[1].textContent);
+            var nombreCompleto = $tr[0].cells[1].childNodes[2].textContent;
+            var confirmaBorrado = confirm("Desea eliminar al Usuario: \'" + nombreCompleto + "\'?");
+
+            if (confirmaBorrado) {
+                inicializador.eliminaUsuario(IdUsuario);
+            }
+
+        });
     },
     registraUsuario: function () {
         usuarioVM = {};
-        usuarioVM.Nombre = inicializador.controles.txtNombre.val();
-        usuarioVM.ApellidoPaterno = inicializador.controles.txtApellidoPat.val();
-        usuarioVM.ApellidoMaterno = inicializador.controles.txtApellidoMat.val();
-        usuarioVM.Direccion = inicializador.controles.txtDireccion.val();
-        usuarioVM.CodigoPostal = inicializador.controles.txtCodigoPostal.val();
-        usuarioVM.Telefono1 = inicializador.controles.TxtTelefono.val();
-        usuarioVM.Telefono2 = inicializador.controles.TxtTelefonoOpcional.val();
-        usuarioVM.perfilId = inicializador.controles.ddlPerfiles[0].selectedOptions[0].value;
+        usuarioVM.Id = inicializador.controles.txtIdUsuario.val();
+        usuarioVM.Nombre = $.trim(inicializador.controles.txtNombre.val());
+        usuarioVM.ApellidoPaterno = $.trim(inicializador.controles.txtApellidoPat.val());
+        usuarioVM.ApellidoMaterno = $.trim(inicializador.controles.txtApellidoMat.val());
+        usuarioVM.Direccion = $.trim(inicializador.controles.txtDireccion.val());
+        usuarioVM.CodigoPostal = $.trim(inicializador.controles.txtCodigoPostal.val());
+        usuarioVM.Telefono1 = $.trim(inicializador.controles.TxtTelefono.val());
+        usuarioVM.Telefono2 = $.trim(inicializador.controles.TxtTelefonoOpcional.val());
+        usuarioVM.perfilId = $.trim(inicializador.controles.ddlPerfiles[0].selectedOptions[0].value);
+
+        if (usuarioVM.Id != "")
+        {
+            inicializador.editaUsuario(usuarioVM);
+            return;
+        }
 
         $.ajax({
             type: 'POST',
@@ -114,8 +175,50 @@ var inicializador = {
             }
         });
     },
+    editaUsuario: function (usuarioVM) {
+        debugger;
+        $.ajax({
+            type: 'POST',
+            async: false,
+            url: "/Admin/EditaUsuario", // we are calling json method
+            //dataType: 'json',
+            data: usuarioVM,
+            success: function (result) {
+
+            },
+            error: function (ex) {
+
+            }
+        });
+    },
+    eliminaUsuario: function (IdUsuario) {
+        $.ajax({
+            type: 'Delete',
+            async: false,
+            url: "/Admin/EliminaUsuario/", // we are calling json method
+            //dataType: 'json',
+            data: { idUsuario: IdUsuario },
+            success: function (result) {
+                location.reload();
+            },
+            error: function (ex) {
+
+            }
+        });
+    },
     cancelarUsuario: function () {
-        alert("btnCancelar Ejecucion Correcta!");
+        inicializador.LimpiaUsuarioForm();
+    },
+    LimpiaUsuarioForm: function () {
+        inicializador.controles.txtIdUsuario.val('');
+        inicializador.controles.txtNombre.val('');
+        inicializador.controles.txtApellidoPat.val('');
+        inicializador.controles.txtApellidoMat.val('');
+        inicializador.controles.txtDireccion.val('');
+        inicializador.controles.txtCodigoPostal.val('');
+        inicializador.controles.TxtTelefono.val('');
+        inicializador.controles.TxtTelefonoOpcional.val('');
+        inicializador.controles.chkActivo[0].checked = false;
     },
     init: function () {
         inicializador.inicializarEventos();
