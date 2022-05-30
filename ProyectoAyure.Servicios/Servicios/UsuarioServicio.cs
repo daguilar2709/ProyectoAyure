@@ -36,6 +36,8 @@ namespace ProyectoAyure.Servicios.Servicios
                 usuarioVM.Telefono2 = usuario.Telefono2 == null ? "" : usuario.Telefono2;
                 usuarioVM.FechaCreacion = usuario.FechaCreacion;
                 usuarioVM.FechaModificacion = usuario.FechaModificacion;
+                usuarioVM.perfilId = usuario.perfiles == null ? 0 : usuario.perfiles.Id;
+                usuarioVM.nombrePerfil = usuario.perfiles == null ? "" : usuario.perfiles.NombrePerfil;
                 usuarioVM.Activo = usuario.Activo;
 
                 return usuarioVM;

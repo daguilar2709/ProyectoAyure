@@ -570,6 +570,14 @@ D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ref\ProyectoAyure.Web.dll
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.pdb
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.genruntimeconfig.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.AssemblyInfo.cs
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.RazorAssemblyInfo.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.RazorAssemblyInfo.cs
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\appsettings.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Web.staticwebassets.runtime.json
@@ -577,7 +585,6 @@ C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Pro
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Web.deps.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Web.runtimeconfig.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Web.dll
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ref\ProyectoAyure.Web.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Web.pdb
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -869,11 +876,21 @@ C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ref
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\refs\WindowsBase.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Autofac.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Azure.Security.KeyVault.Certificates.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\EntityFramework.SqlServer.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\EntityFramework.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Humanizer.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\MessagePack.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
@@ -903,12 +920,21 @@ C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Mic
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.Identity.Web.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.Identity.Web.Certificate.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.Identity.Web.TokenCache.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Validators.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -929,6 +955,9 @@ C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\NuG
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\NuGet.ProjectModel.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\NuGet.Protocol.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\NuGet.Versioning.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\System.Composition.AttributedModel.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\System.Composition.Convention.dll
@@ -1124,15 +1153,7 @@ C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Pro
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Repositorios.pdb
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Data.pdb
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Servicios.pdb
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.csproj.AssemblyReference.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.AssemblyInfoInputs.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.AssemblyInfo.cs
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.csproj.CoreCompileInputs.cache
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.RazorAssemblyInfo.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.RazorAssemblyInfo.cs
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
@@ -1140,6 +1161,7 @@ C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\sco
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\scopedcss\projectbundle\ProyectoAyure.Web.bundle.scp.css
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.csproj.CopyComplete
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.dll
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ref\ProyectoAyure.Web.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\refint\ProyectoAyure.Web.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.pdb
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.genruntimeconfig.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ref\ProyectoAyure.Web.dll

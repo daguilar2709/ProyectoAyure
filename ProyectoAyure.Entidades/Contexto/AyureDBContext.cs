@@ -17,6 +17,9 @@ namespace ProyectoAyure.Data.Contexto
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Perfiles> Perfiles { get; set; }
         public DbSet<UsuarioAcceso> UsuarioAcceso { get; set; }
+        public DbSet<Solicitudes> Solicitudes { get; set; }
+        public DbSet<Materiales> Materiales { get; set; }
+        public DbSet<Ticket> Ticket { get; set; }
 
         public AyureDbContext(DbContextOptions<AyureDbContext> options) : base(options)
         {
@@ -54,6 +57,12 @@ namespace ProyectoAyure.Data.Contexto
                 .HasOne(a => a.usuarios)
                 .WithOne(b => b.usuarioAcceso)
                 .HasForeignKey<Usuarios>(b => b.usuarioAccesoId);
+
+            //modelBuilder.Entity<Ticket>()
+            //    .HasMany<Solicitudes>(a => a.solicitudId)
+            //    .WithMany(b => b.);
+
+            modelBuilder.Entity<Usuarios>().Property(a => a.perfilId).ValueGeneratedNever();
         }
     }
 }

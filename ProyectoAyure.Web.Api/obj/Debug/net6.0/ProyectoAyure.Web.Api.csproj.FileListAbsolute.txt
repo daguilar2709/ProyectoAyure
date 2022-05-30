@@ -1,0 +1,12 @@
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\bin\Debug\net6.0\ProyectoAyure.Web.Api.deps.json
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\bin\Debug\net6.0\ProyectoAyure.Web.Api.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\bin\Debug\net6.0\ProyectoAyure.Web.Api.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\obj\Debug\net6.0\ProyectoAyure.Web.Api.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\obj\Debug\net6.0\ProyectoAyure.Web.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\obj\Debug\net6.0\ProyectoAyure.Web.Api.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\obj\Debug\net6.0\ProyectoAyure.Web.Api.AssemblyInfo.cs
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\obj\Debug\net6.0\ProyectoAyure.Web.Api.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\obj\Debug\net6.0\ProyectoAyure.Web.Api.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\obj\Debug\net6.0\refint\ProyectoAyure.Web.Api.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\obj\Debug\net6.0\ProyectoAyure.Web.Api.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web.Api\obj\Debug\net6.0\ref\ProyectoAyure.Web.Api.dll

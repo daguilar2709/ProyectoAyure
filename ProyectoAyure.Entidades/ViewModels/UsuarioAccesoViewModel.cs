@@ -11,7 +11,7 @@ namespace ProyectoAyure.Data.ViewModels
     {
         public int Id { get; set; }
         public string NombreUsuario { get; set; }
-        public string Constraseña { get; set; }
+        public string Contraseña { get; set; }
         public Guid Identificador { get; set; }
         public DateTime FechaCreacion { get; set; }
         public DateTime FechaModificacion { get; set; }

@@ -1,14 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProyectoAyure.Data.ViewModels;
 using ProyectoAyure.Servicios.IServicios;
 
 namespace ProyectoAyure.Web.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         #region Variables
         private IUsuarioServicio _usuarioServicio;
         private IPerfilServicio _perfilServicio;
+
         #endregion
 
         #region Constructor
@@ -20,21 +23,40 @@ namespace ProyectoAyure.Web.Controllers
         #endregion
 
         #region Vistas
+        [Authorize]
         public IActionResult Index()
         {
+            if (!HttpContext.User.Identity.IsAuthenticated)
+                return RedirectToAction("Index", "Login");
+
             return View();
         }
 
+        [Authorize]
         public IActionResult Usuarios()
         {
-            List<UsuarioViewModel> lstUsuarioVM = _usuarioServicio.ObtieneUsuarios();
-            return View(lstUsuarioVM);
+            if (!HttpContext.User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            else
+            {
+                List<UsuarioViewModel> lstUsuarioVM = _usuarioServicio.ObtieneUsuarios();
+                return View(lstUsuarioVM);
+            }
         }
 
         public IActionResult Perfiles()
         {
-            List<PerfilViewModel> lstPerfilesVM = _perfilServicio.ObtienePerfiles();
-            return View(lstPerfilesVM);
+            if (!HttpContext.User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            else
+            {
+                List<PerfilViewModel> lstPerfilesVM = _perfilServicio.ObtienePerfiles();
+                return View(lstPerfilesVM);
+            }
         }
         #endregion
 

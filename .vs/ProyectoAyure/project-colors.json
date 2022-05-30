@@ -25,7 +25,12 @@
       "ProjectGuid": "27a9eaca-69af-406e-9442-893587394232",
       "DisplayName": "ProyectoAyure.Repositorios",
       "ColorIndex": 3
+    },
+    "badb1a72-a56a-41df-9937-8ea23fd53f5f": {
+      "ProjectGuid": "badb1a72-a56a-41df-9937-8ea23fd53f5f",
+      "DisplayName": "ProyectoAyure.Web.Api",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

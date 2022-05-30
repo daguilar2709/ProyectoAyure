@@ -1,0 +1,42 @@
+﻿@model ProyectoAyure.Data.ViewModels.UsuarioAccesoViewModel;
+
+@{
+    ViewData["Title"] = "Ayure - Aplicativo Web";
+    Layout = null;
+    ViewBag.Title = "Ayure - Aplicativo Web";
+}
+
+<script src="~/js/jquery-3.6.0.min.js"></script>
+<script src="~/js/jquery-ui.js"></script>
+
+@*<form method="post" id="frmLogin">
+<div class="container">
+    <div class="row">
+        <label style="float:left;">Usuario: </label>
+           <input id="txtUsuario" type="text" style="width:250px; margin-left: 15px;"/>
+    </div>
+    <br/>
+    <div class="row">
+        <label style="float:left;">Contraseña: </label>
+           <input id="txtContrasena" type="text" style="width:250px; margin-left: 15px; "/>
+    </div>
+    <div>
+        <button id="btnIniciaSesion" type="submit" class="btn-primary" style="margin-top:15px;">Iniciar Sesion</button>
+    </div>
+</div>
+</form>*@
+<div class="container" style = "width:500px; height:250px; border-style: solid; border-color: #000000; border-radius: 2em; padding: 30px 50px; margin-top:75px; margin-left:300px;">
+    <div class="row" style="width:500px; height:125px;"></div>
+    @using (Html.BeginForm("ValidaUsuario", "Login", FormMethod.Post, new { style = "width:500px; height:125px; padding: 30px 135px;", autocomplete = "false" }))
+    {
+    <label>Usuario: </label>
+    @Html.TextBoxFor(x => x.NombreUsuario) <br />
+    <br />
+    <label>Contraseña: </label>
+    @Html.TextBoxFor(x => x.Contraseña) <br />
+    <br />
+    <button type="submit">Entrar</button>
+}
+</div>
+
+<script src="@Url.Content("../js/Login.js?=")@DateTime.Now.ToString(" ddMMyyHHmmss")"></script>

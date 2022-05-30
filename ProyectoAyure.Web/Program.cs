@@ -6,25 +6,43 @@ using ProyectoAyure.Servicios.Servicios;
 using ProyectoAyure.Data.ViewModels;
 using ProyectoAyure.Repositorios.IRepositorio;
 using ProyectoAyure.Repositorios.Repositorio;
+using ProyectoAyure.Data.Entidades;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.CookiePolicy;
 
-var perfilVM = new PerfilViewModel();
 var builder = WebApplication.CreateBuilder(args);
-
 
 // Add services to the container.
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<AyureDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
+//builder.Services.AddDefaultIdentity<UsuarioAcceso>().AddEntityFrameworkStores<AyureDbContext>();
 builder.Services.AddScoped<IUsuarioServicio, UsuarioServicio>();
 builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 builder.Services.AddScoped<IPerfilServicio, PerfilServicio>();
 builder.Services.AddScoped<IPerfilRepositorio, PerfilRepositorio>();
-//builder.Services.AddTransient<IPerfilServicio, PerfilServicio>();
-//builder.Services.AddSingleton<IPerfilServicio, PerfilServicio>();
+builder.Services.AddScoped<IUsuarioAccesoServicio, UsuarioAccesoServicio>();
+builder.Services.AddScoped<IUsuarioAccesoRepositorio, UsuarioAccesoRepositorio>();
+builder.Services.AddSession();
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login/Index/";
+        options.AccessDeniedPath = "/Home/Error/";
+    });
+
+//builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+//{
+//    options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+//    options.SlidingExpiration = true;
+//    options.AccessDeniedPath = "/Forbidden/";
+//});
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -42,12 +60,20 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseCookiePolicy(new CookiePolicyOptions
+    {
+    MinimumSameSitePolicy = SameSiteMode.Strict,
+    HttpOnly = HttpOnlyPolicy.Always
+    });
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 //app.MapGet("/Admin/RegistraPerfil/", (PerfilServicio perfilServicio) => perfilServicio.RegistraPerfil(perfilVM));
 
+app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Index}/");
 
 app.Run();

@@ -15,20 +15,20 @@ D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\n
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.dll
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ref\ProyectoAyure.Servicios.dll
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.pdb
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Servicios.deps.json
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Servicios.dll
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ref\ProyectoAyure.Servicios.dll
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Servicios.pdb
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Data.dll
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Repositorios.dll
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Repositorios.pdb
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Data.pdb
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.csproj.AssemblyReference.cache
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.AssemblyInfoInputs.cache
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.AssemblyInfo.cs
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Servicios.deps.json
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Servicios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Servicios.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Data.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Repositorios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Repositorios.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\bin\Debug\net6.0\ProyectoAyure.Data.pdb
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.csproj.CopyComplete
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.dll
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ref\ProyectoAyure.Servicios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\refint\ProyectoAyure.Servicios.dll
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ProyectoAyure.Servicios.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Servicios\obj\Debug\net6.0\ref\ProyectoAyure.Servicios.dll
