@@ -22,6 +22,30 @@ namespace ProyectoAyure.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("ProyectoAyure.Data.Entidades.Materiales", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<bool>("Activo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("NombreMaterial")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PrecioXKilo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Materiales");
+                });
+
             modelBuilder.Entity("ProyectoAyure.Data.Entidades.Perfiles", b =>
                 {
                     b.Property<int>("Id")
@@ -41,6 +65,69 @@ namespace ProyectoAyure.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Perfiles");
+                });
+
+            modelBuilder.Entity("ProyectoAyure.Data.Entidades.Solicitudes", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<bool>("Activo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("FechaCreacion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FechaModificacion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumeroSolicitud")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NumeroTicket")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<int?>("usuarioAmbientalista")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("usuarioCentroReciclaje")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("usuarioRecolector")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Solicitudes");
+                });
+
+            modelBuilder.Entity("ProyectoAyure.Data.Entidades.Ticket", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<int>("materialId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("solicitudId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ticket");
                 });
 
             modelBuilder.Entity("ProyectoAyure.Data.Entidades.UsuarioAcceso", b =>
@@ -93,12 +180,10 @@ namespace ProyectoAyure.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ApellidoMaterno")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("ApellidoPaterno")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -107,6 +192,16 @@ namespace ProyectoAyure.Data.Migrations
 
                     b.Property<string>("Direccion")
                         .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Email1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Empresa")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
@@ -119,7 +214,6 @@ namespace ProyectoAyure.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
-                        .IsRequired()
                         .HasMaxLength(75)
                         .HasColumnType("nvarchar(75)");
 

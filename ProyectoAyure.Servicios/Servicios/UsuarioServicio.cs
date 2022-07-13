@@ -58,9 +58,9 @@ namespace ProyectoAyure.Servicios.Servicios
                 {
                     lstusuarioVM.Add(new UsuarioViewModel() {
                         Id = usuario.Id,
-                        Nombre = usuario.Nombre,
-                        ApellidoPaterno = usuario.ApellidoPaterno,
-                        ApellidoMaterno = usuario.ApellidoMaterno,
+                        Nombre = usuario.perfiles != null ? usuario.perfiles.Id == 1 || usuario.perfiles.Id == 2 ? usuario.Nombre : usuario.Empresa : usuario.Nombre,
+                        ApellidoPaterno = usuario.perfiles != null ? usuario.perfiles.Id == 1 || usuario.perfiles.Id == 2 ? usuario.ApellidoPaterno : "" : usuario.ApellidoPaterno,
+                        ApellidoMaterno = usuario.perfiles != null ? usuario.perfiles.Id == 1 || usuario.perfiles.Id == 2 ? usuario.ApellidoMaterno : "" : usuario.ApellidoMaterno,
                         Direccion = usuario.Direccion,
                         CodigoPostal = usuario.CodigoPostal,
                         Telefono1 = usuario.Telefono1,
@@ -84,24 +84,37 @@ namespace ProyectoAyure.Servicios.Servicios
         public bool RegistraUsuario(UsuarioViewModel usuarioVM)
         {
             Usuarios usuario = new Usuarios();
+            int perfilId = usuarioVM.perfilId;
 
             try
             {
-                usuario.Nombre = usuarioVM.Nombre;
-                usuario.ApellidoPaterno = usuarioVM.ApellidoPaterno;
-                usuario.ApellidoMaterno = usuarioVM.ApellidoMaterno;
+                if (perfilId == 1 || perfilId == 2)
+                {
+                    usuario.Nombre = usuarioVM.Nombre;
+                    usuario.ApellidoPaterno = usuarioVM.ApellidoPaterno;
+                    usuario.ApellidoMaterno = usuarioVM.ApellidoMaterno;
+                    usuario.Empresa = "";
+                }
+                else if (perfilId == 3 || perfilId == 4)
+                {
+                    usuario.Nombre = "";
+                    usuario.ApellidoPaterno = "";
+                    usuario.ApellidoMaterno = "";
+                    usuario.Empresa = usuarioVM.Empresa;
+                }
+                
                 usuario.Direccion = usuarioVM.Direccion;
                 usuario.CodigoPostal = usuarioVM.CodigoPostal;
+                usuario.Email1 = usuarioVM.Email;
                 usuario.Telefono1 = usuarioVM.Telefono1;
                 usuario.Telefono2 = usuarioVM.Telefono2;
                 usuario.FechaCreacion = usuarioVM.FechaCreacion;
                 usuario.FechaModificacion = usuarioVM.FechaModificacion;
                 usuario.Activo = usuarioVM.Activo;
-                int perfilId = usuarioVM.perfilId;
 
                 usuario = _iUsuarioRepositorio.RegistraUsuario(usuario, perfilId);
 
-                usuario.usuarioAcceso = CreaAcceso(usuario);
+                usuario.usuarioAcceso = CreaAcceso(usuario, usuarioVM.Usuario);
                 usuario.usuarioAccesoId = usuario.usuarioAcceso.Id;
 
                 usuario = _iUsuarioRepositorio.ActualizaUsuario(usuario);
@@ -121,12 +134,18 @@ namespace ProyectoAyure.Servicios.Servicios
             }
         } 
 
-        private UsuarioAcceso CreaAcceso(Usuarios usuarioVM)
+        private UsuarioAcceso CreaAcceso(Usuarios usuarioVM, string? nombreUsuario = "")
         {
             UsuarioAcceso usuarioAcceso = new UsuarioAcceso();
-
-            var nombres = usuarioVM.Nombre.Split(' ');
-            usuarioAcceso.NombreUsuario = nombres[0].ToLower()+usuarioVM.ApellidoPaterno;
+            if (nombreUsuario == "")
+            {
+                var nombres = usuarioVM.Nombre.Split(' ');
+                usuarioAcceso.NombreUsuario = nombres[0].ToLower() + usuarioVM.ApellidoPaterno;
+            }
+            else
+            {
+                usuarioAcceso.NombreUsuario = nombreUsuario;
+            }
             usuarioAcceso.Constraseña = "prueba123";
             usuarioAcceso.Identificador = Guid.NewGuid();
             usuarioAcceso.FechaCreacion = DateTime.Now;

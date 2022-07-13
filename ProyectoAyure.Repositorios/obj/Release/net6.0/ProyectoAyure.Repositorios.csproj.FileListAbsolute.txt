@@ -1,0 +1,15 @@
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Release\net6.0\ProyectoAyure.Repositorios.deps.json
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Release\net6.0\ProyectoAyure.Repositorios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Release\net6.0\ProyectoAyure.Repositorios.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Release\net6.0\ProyectoAyure.Data.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\bin\Release\net6.0\ProyectoAyure.Data.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\ProyectoAyure.Repositorios.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\ProyectoAyure.Repositorios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\ProyectoAyure.Repositorios.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\ProyectoAyure.Repositorios.AssemblyInfo.cs
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\ProyectoAyure.Repositorios.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\ProyectoAyure.Repositorios.csproj.CopyComplete
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\ProyectoAyure.Repositorios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\refint\ProyectoAyure.Repositorios.dll
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\ProyectoAyure.Repositorios.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Repositorios\obj\Release\net6.0\ref\ProyectoAyure.Repositorios.dll

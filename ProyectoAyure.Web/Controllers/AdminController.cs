@@ -29,6 +29,8 @@ namespace ProyectoAyure.Web.Controllers
             if (!HttpContext.User.Identity.IsAuthenticated)
                 return RedirectToAction("Index", "Login");
 
+            ViewBag.Perfil = HttpContext.User.Claims.Last().Value;
+
             return View();
         }
 
@@ -42,6 +44,7 @@ namespace ProyectoAyure.Web.Controllers
             else
             {
                 List<UsuarioViewModel> lstUsuarioVM = _usuarioServicio.ObtieneUsuarios();
+                ViewBag.Perfil = HttpContext.User.Claims.Last().Value;
                 return View(lstUsuarioVM);
             }
         }
@@ -55,6 +58,7 @@ namespace ProyectoAyure.Web.Controllers
             else
             {
                 List<PerfilViewModel> lstPerfilesVM = _perfilServicio.ObtienePerfiles();
+                ViewBag.Perfil = HttpContext.User.Claims.Last().Value;
                 return View(lstPerfilesVM);
             }
         }

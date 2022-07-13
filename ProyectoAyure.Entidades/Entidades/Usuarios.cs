@@ -14,20 +14,21 @@ namespace ProyectoAyure.Data.Entidades
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required]
         [MaxLength(75)]
-        public string Nombre { get; set; }
-        [Required]
+        public string? Nombre { get; set; }
         [MaxLength(100)]
-        public string ApellidoPaterno { get; set; }
-        [Required]
+        public string? ApellidoPaterno { get; set; }
         [MaxLength(100)]
-        public string ApellidoMaterno { get; set; }
+        public string? ApellidoMaterno { get; set; }
+        [MaxLength(250)]
+        public string? Empresa { get; set; }
         [MaxLength(250)]
         public string Direccion { get; set; }
         [MaxLength(75)]
         public string Telefono1 { get; set; }
         public string? Telefono2 { get; set; }
+        public string? Email1 { get; set; }
+        public string? Email2 { get; set; }
         public int CodigoPostal { get; set; }
         public string FechaCreacion { get; set; }
         public string FechaModificacion { get; set; }

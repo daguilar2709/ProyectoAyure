@@ -570,14 +570,6 @@ D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ref\ProyectoAyure.Web.dll
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.pdb
 D:\Projects\Visual Studio 2022\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.genruntimeconfig.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.csproj.AssemblyReference.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.AssemblyInfoInputs.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.AssemblyInfo.cs
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.csproj.CoreCompileInputs.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.RazorAssemblyInfo.cache
-C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.RazorAssemblyInfo.cs
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\appsettings.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Web.staticwebassets.runtime.json
@@ -1153,7 +1145,15 @@ C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\Pro
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Repositorios.pdb
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Data.pdb
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\bin\Debug\net6.0\ProyectoAyure.Servicios.pdb
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.AssemblyInfo.cs
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.csproj.CoreCompileInputs.cache
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.RazorAssemblyInfo.cache
+C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\ProyectoAyure.Web.RazorAssemblyInfo.cs
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\david\source\repos\ProyectoAyure\ProyectoAyure.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

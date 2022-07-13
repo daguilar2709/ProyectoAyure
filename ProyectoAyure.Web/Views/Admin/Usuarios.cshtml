@@ -25,23 +25,37 @@
     </div>
     <div class="row" >
         <form method="post" id="frmUsuario">
-            <div class="row" style="align-content:end;">
+            <div id="DatosBloque" class="row" style="align-content:end;">
                 <label style="width:35px;">Id:</label>
                 @Html.TextBox("TxtIdUsuario", null, new { @id = "TxtIdUsuario", @class = "form-control", @placeholder = "", @style="float: left; width: 50px; margin-top:-5px;", @disabled="disabled" ,@autocomplete = "off", @maxlength = "70"})
                 <label style="width:75px;">Nombre:</label>
                 @Html.TextBox("txtNombre", null, new { @id = "txtNombre", @class = "form-control", @placeholder = "", @style="float: left; width: 350px; margin: -5px 0px 0px 10px;" ,@autocomplete = "off", @maxlength = "100", @data_validation = "required", @data_validation_error_msg_required = "" })
             </div>
-            <div class="row" style="align-content:center; padding-top:1em;">
-                <label style="width:150px;">Apeliido Paterno:</label>
+            <div id="ApellidosBloque" class="row" style="align-content:center; padding-top:1em;">
+                <label style="width:150px;">Apellido Paterno:</label>
                 @Html.TextBox("txtApellidoPat", null, new { @id = "txtApellidoPat", @class = "form-control", @placeholder = "", @style="float: left; width: 200px; margin-top:-5px;" ,@autocomplete = "off", @maxlength = "100", @data_validation = "required", @data_validation_error_msg_required = "" })
                 <label style="float: left; width:160px; margin-left:10px;">Apellido Materno:</label>
                 @Html.TextBox("txtApellidoMat", null, new { @id = "txtApellidoMat", @class = "form-control", @placeholder = "", @style="float: left; width: 200px; margin-top:-5px;" ,@autocomplete = "off", @maxlength = "100", @data_validation = "required", @data_validation_error_msg_required = "" })
             </div>
+
+            <div id="EmpresaBloque" class="row" style="align-content:end;">
+                <label id="lblIdEmpresa" style="width:35px;">Id:</label>
+                @Html.TextBox("TxtIdEmpresa", null, new { @id = "TxtIdUsuario", @class = "form-control", @placeholder = "", @style="float: left; width: 50px; margin-top:-5px;", @disabled="disabled" ,@autocomplete = "off", @maxlength = "70"})
+                <label style="width:100px;">Empresa:</label>
+                @Html.TextBox("txtEmpresa", null, new { @id = "txtEmpresa", @class = "form-control", @placeholder = "", @style="float: left; width: 400px; margin-top:-5px;" ,@autocomplete = "off", @maxlength = "100", @data_validation = "required", @data_validation_error_msg_required = "" })
+                 <label id="lblUsuario" style="width:75px; visibility:false;">Usuario:</label>
+                @Html.TextBox("txtUsuario", null, new { @id = "txtUsuario", @class = "form-control", @placeholder = "", @style="float: left; width: 250px; margin: -5px 0px 0px 10px; visibility:false" ,@autocomplete = "off", @maxlength = "100", @data_validation = "required", @data_validation_error_msg_required = "" })
+            </div>
+            
             <div class="row" style="align-content: center; padding-top: 1em;">
                 <label style="width:100px;">Direccion:</label>
-                @Html.TextBox("txtDireccion", null, new { @id = "txtDireccion", @class = "form-control", @placeholder = "", @style="float: left; width: 350px; margin-top:-5px;" ,@autocomplete = "off", @maxlength = "100", @data_validation = "required", @data_validation_error_msg_required = "" })
+                @Html.TextBox("txtDireccion", null, new { @id = "txtDireccion", @class = "form-control", @placeholder = "", @style="float: left; width: 450px; margin-top:-5px;" ,@autocomplete = "off", @maxlength = "100", @data_validation = "required", @data_validation_error_msg_required = "" })
                 <label style="width:65px; margin-top:7px;">Perfil:</label>
                 @Html.DropDownList("lstPerfiles", new SelectList(Enumerable.Empty<SelectListItem>()), "", new { @class = "form-control", @style="float:left; width:350px;", @placeholder = "", @autocomplete = "off", @data_validation = "required", @data_validation_error_msg_required = "" })
+            </div>
+            <div class="row" style="align-content:center; padding-top:1em;">
+                <label style="float: left; width:60px; margin-left:10px;">Email:</label>
+                @Html.TextBox("txtEmail", null, new { @id = "txtEmail", @class = "form-control", @placeholder = "", @style="float: left; width: 300px; margin-top:-5px;" ,@autocomplete = "off", @maxlength = "100", @data_validation = "required", @data_validation_error_msg_required = "" })
             </div>
             <div class="row" style="align-content: center; padding-top: 1em;">
                 <label class="" style="float: left;width:160px; margin-left:10px;"> Codigo Postal:</label>
@@ -61,10 +75,10 @@
         </form>
     </div>
     <div class="row" style="height:25px;">&nbsp;</div>
-        <table class="table table-striped table-hover" style="overflow:inherit !important; width:800px; " data-pagination="true" id="tbUsuarios">
+        <table class="table table-striped table-hover" style="overflow:inherit !important; width:1280px; " data-pagination="true" id="tbUsuarios">
             <thead>
                 <tr style="background:#9B9A9A;">
-                    <th data-field="Id" data-valign="middle" style="width:50px;font-size:12px;">Id</th>
+                    <th data-field="Id" data-valign="middle" style="width:250px;font-size:12px;">Id</th>
                     <th data-field="Nombre" data-valign="middle" style="width:150px;font-size:12px;">Nombre</th>
                     <th data-field="Direccion" data-valign="middle" style="width:150px;font-size:12px;">Direccion</th>
                     <th data-field="nombrePerfil" data-valign="middle" style="width:100px;font-size:12px;">Perfil</th>
@@ -86,7 +100,7 @@
                             <label>@item.Id</label>
                         </td>
                         <td>
-                            <label style="width:200px;font-size:12px;">@NombreCompleto</label>
+                            <label style="width:175px;font-size:12px;">@NombreCompleto</label>
                         </td>
                         <td>
                             <label style="width:150px;font-size:12px;">@item.Direccion</label>
