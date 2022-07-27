@@ -15,7 +15,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<AyureDbContext>(options => {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    //Local Server
+    //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    //Azure Server
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AzureConnection"));
 });
 //builder.Services.AddDefaultIdentity<UsuarioAcceso>().AddEntityFrameworkStores<AyureDbContext>();
 builder.Services.AddScoped<IUsuarioServicio, UsuarioServicio>();
