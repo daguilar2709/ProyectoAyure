@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7FxkfD6u8A7+xCoFYAMzR0eNcMq+T1XF4Hj/QyZqG+yQZSIvyEiv5yqVQ1l3Ty6cu2dEbREt+XBXi8EIN7isBQ==",
+  "dgSpecHash": "wkTG8ZGMZKcxh786+6H4fjIWqf0LnbsNJzBFkBiC8mRl5IkpcQYM40EDuGpNyIGGKADKnMyoBtnNUjY5TMNLaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Web\\ProyectoAyure.Web.csproj",
   "expectedPackageFiles": [
@@ -92,6 +92,7 @@
     "C:\\Users\\david\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.1\\microsoft.entityframeworkcore.design.6.0.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.1\\microsoft.entityframeworkcore.relational.6.0.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.1\\microsoft.entityframeworkcore.sqlserver.6.0.1.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.1\\microsoft.entityframeworkcore.tools.6.0.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0\\microsoft.extensions.caching.memory.6.0.0.nupkg.sha512",

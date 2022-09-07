@@ -5,7 +5,7 @@
     Layout = null;
     ViewBag.Title = "Ayure - Aplicativo Web";
 }
-
+<meta http-equiv="Access-Control-Allow-Origin" content="*" />
 <script src="~/js/jquery-3.6.0.min.js"></script>
 <script src="~/js/jquery-ui.js"></script>
 <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css" />
@@ -13,17 +13,15 @@
 
 <div class="container" style = "width:500px; height:250px; border-style: solid; border-color: #000000; border-radius: 2em;  margin-top:175px; margin-left:550px;">
     <div class="row" style="width:500px; height:105px;"></div>
-    @using (Html.BeginForm("ValidaUsuario", "Login", FormMethod.Post, new { style = "width:350px; height:125px; margin: 5px 0px 0px 100px;", autocomplete = "false" }))
-    {
-    <label>Usuario: </label>
-    @Html.TextBoxFor(x => x.NombreUsuario) <br />
-    <br />
-    <label>Contraseña: </label>
-    @Html.TextBoxFor(x => x.Contraseña) <br />
-    <br />
-    <button type="submit">Entrar</button>
-    }
-    <br />
+    <div style="width:350px; height:125px; margin: 5px 0px 0px 100px;">
+        <label>Usuario: </label>
+        @Html.TextBoxFor(x => x.NombreUsuario) <br />
+        <br />
+        <label>Contraseña: </label>
+        @Html.TextBoxFor(x => x.Contraseña) <br />
+        <br />
+        <button id="btnIniciaSesion" type="submit">Entrar</button>
+    </div>
     <label style="width:500px; height:125px;font-size:12px; padding: 30px 110px;">Aun no tienes cuenta? <a class="link-name" href="#myModal">Crea una Cuenta</a></label>
 </div>
 

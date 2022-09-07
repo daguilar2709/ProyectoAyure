@@ -1,0 +1,328 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.WebApi\\ProyectoAyure.WebApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Entidades\\ProyectoAyure.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Entidades\\ProyectoAyure.Data.csproj",
+        "projectName": "ProyectoAyure.Data",
+        "projectPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Entidades\\ProyectoAyure.Data.csproj",
+        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Entidades\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Repositorios\\ProyectoAyure.Repositorios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Repositorios\\ProyectoAyure.Repositorios.csproj",
+        "projectName": "ProyectoAyure.Repositorios",
+        "projectPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Repositorios\\ProyectoAyure.Repositorios.csproj",
+        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Repositorios\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Servicios\\ProyectoAyure.Servicios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Servicios\\ProyectoAyure.Servicios.csproj",
+        "projectName": "ProyectoAyure.Servicios",
+        "projectPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Servicios\\ProyectoAyure.Servicios.csproj",
+        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Servicios\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Repositorios\\ProyectoAyure.Repositorios.csproj": {
+                "projectPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Repositorios\\ProyectoAyure.Repositorios.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.WebApi\\ProyectoAyure.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.WebApi\\ProyectoAyure.WebApi.csproj",
+        "projectName": "ProyectoAyure.WebApi",
+        "projectPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.WebApi\\ProyectoAyure.WebApi.csproj",
+        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Entidades\\ProyectoAyure.Data.csproj": {
+                "projectPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Entidades\\ProyectoAyure.Data.csproj"
+              },
+              "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Servicios\\ProyectoAyure.Servicios.csproj": {
+                "projectPath": "C:\\Users\\david\\source\\repos\\ProyectoAyure\\ProyectoAyure.Servicios\\ProyectoAyure.Servicios.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

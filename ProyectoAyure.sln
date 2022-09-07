@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoAyure.Servicios", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoAyure.Repositorios", "ProyectoAyure.Repositorios\ProyectoAyure.Repositorios.csproj", "{27A9EACA-69AF-406E-9442-893587394232}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoAyure.Web.Api", "ProyectoAyure.Web.Api\ProyectoAyure.Web.Api.csproj", "{BADB1A72-A56A-41DF-9937-8EA23FD53F5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoAyure.WebApi", "ProyectoAyure.WebApi\ProyectoAyure.WebApi.csproj", "{29083BD7-4DC0-44F3-A9EE-499D87904AA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{27A9EACA-69AF-406E-9442-893587394232}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27A9EACA-69AF-406E-9442-893587394232}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27A9EACA-69AF-406E-9442-893587394232}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BADB1A72-A56A-41DF-9937-8EA23FD53F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BADB1A72-A56A-41DF-9937-8EA23FD53F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BADB1A72-A56A-41DF-9937-8EA23FD53F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BADB1A72-A56A-41DF-9937-8EA23FD53F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29083BD7-4DC0-44F3-A9EE-499D87904AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29083BD7-4DC0-44F3-A9EE-499D87904AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29083BD7-4DC0-44F3-A9EE-499D87904AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29083BD7-4DC0-44F3-A9EE-499D87904AA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

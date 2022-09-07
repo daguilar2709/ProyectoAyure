@@ -29,6 +29,29 @@ builder.Services.AddScoped<IUsuarioAccesoServicio, UsuarioAccesoServicio>();
 builder.Services.AddScoped<IUsuarioAccesoRepositorio, UsuarioAccesoRepositorio>();
 builder.Services.AddSession();
 
+//builder.Services.AddCors(options =>
+//{
+//    options.AddDefaultPolicy(
+//        builder =>
+//        {
+//            builder.WithOrigins("https://localhost:44351", "http://localhost:4200")
+//                                .AllowAnyHeader()
+//                                .AllowAnyMethod();
+//        });
+//});
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        builder =>
+        {
+            builder.WithOrigins("https://localhost:7104/")
+                                .AllowAnyOrigin()
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+        });
+});
+
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -47,12 +70,22 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
 
+app.UseCors(builder =>
+{
+    builder
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader();
+});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
+    app.UseSwagger();
     app.UseExceptionHandler("/Home/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();

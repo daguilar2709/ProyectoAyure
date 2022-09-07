@@ -16,7 +16,7 @@ namespace ProyectoAyure.Web.Controllers
             if (!HttpContext.User.Identity.IsAuthenticated)
                 return RedirectToAction("Index","Login");
 
-            ViewBag.Perfil = HttpContext.User.Claims.Last().Value;
+            ViewBag.Perfil = HttpContext.User.Identities.FirstOrDefault().Claims.ToList()[1].Value;
 
             return View();
         }
